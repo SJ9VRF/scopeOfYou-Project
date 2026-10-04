@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+dist/
+build/
+*.egg-info/
+wandb/
+mlruns/
+checkpoints/llm_*/
+data/exports/*.jsonl
+!data/exports/.gitkeep
+
+# Generated release-time git-history artifacts
+history/*.bundle
+history/git-log.txt
+history/current-head.txt

@@ -1,0 +1,54 @@
+{
+  "backbones": [
+    "Qwen/Qwen3-8B",
+    "meta-llama/Meta-Llama-3.1-8B-Instruct"
+  ],
+  "seeds": [
+    13,
+    29,
+    47
+  ],
+  "methods": [
+    "base_instruct",
+    "sft_personalization",
+    "profile_conditioning",
+    "dpo_personalization",
+    "strong_external_personalized_alignment",
+    "pco_robust"
+  ],
+  "required_evaluations": [
+    "ContractBench-Implicit",
+    "BenchPreS",
+    "Personalized RewardBench",
+    "dynamic_or_cold_start_personalization",
+    "OP-Bench_or_RPEval"
+  ],
+  "headline_metrics": [
+    "apply",
+    "suppress_or_misapplication",
+    "protected_invariance",
+    "general_utility",
+    "worst_contract",
+    "ood_contract",
+    "paraphrase_robustness",
+    "human_context_appropriateness"
+  ],
+  "planned_protected_dimensions": [
+    "factuality",
+    "uncertainty_calibration",
+    "privacy",
+    "autonomy",
+    "instruction_hierarchy",
+    "task_completeness",
+    "non_sycophancy"
+  ],
+  "planned_agentic_actions": [
+    "draft_only",
+    "send_or_commit",
+    "delete_or_irreversible",
+    "schedule_or_book",
+    "change_setting"
+  ],
+  "utility_noninferiority_margin_absolute": 0.02,
+  "utility_gate_note": "Fixed before LLM execution; controlled toy study does not pass this strict margin."
+}

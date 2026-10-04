@@ -1,0 +1,19 @@
+% Anonymous submission source. Obtain the official neurips_2026.sty from the NeurIPS
+% submission package before compiling; do not substitute a third-party style file.
+\documentclass{article}
+\usepackage[main]{neurips_2026}
+\usepackage{booktabs,amsmath,amssymb,graphicx,float,microtype,array}
+\newcommand{\method}{PCO-Robust}
+\newcommand{\bench}{ContractBench-Implicit}
+\title{Scope of You: Learning Where Personalization Is Allowed to Matter}
+\author{Anonymous Author(s)}
+% The submission body should be synchronized with paper/main.tex, with author-identifying
+% text removed and the mandatory NeurIPS checklist appended from the official template.
+\begin{document}
+\maketitle
+\begin{abstract}
+Personalization is often optimized as if stronger preference adherence were always better. We instead study the behavioral scope of an already-known user preference: when its effect should apply, when context should suppress it, and which protected behaviors it must not change. A controlled negative result shows that an explicit-template contract optimizer can appear strong in-suite yet fail on semantically equivalent implicit contexts. We introduce PCO-Robust, which uses disjoint semantic augmentation and history-inferred preference interventions, and ContractBench-Implicit, a 1,460-case held-out stress suite. Across five seeds, PCO-Robust improves the independent contract score over SFT and BATPO while exposing a measurable utility--selectivity tradeoff. The current evidence is a controlled feasibility result rather than an LLM-scale state-of-the-art claim; the release freezes the generative-LLM, public-benchmark, agentic, and human-validation gates required for a stronger claim.
+\end{abstract}
+\input{neurips_body}
+% Append the mandatory checklist from the official NeurIPS 2026 template here.
+\end{document}

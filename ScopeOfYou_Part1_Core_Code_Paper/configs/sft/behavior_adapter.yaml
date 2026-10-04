@@ -1,0 +1,6 @@
+backend: torch_behavior_adapter
+seed: 13
+epochs: 24
+learning_rate: 0.003
+hidden_dim: 96
+clip_grad_norm: 1.0

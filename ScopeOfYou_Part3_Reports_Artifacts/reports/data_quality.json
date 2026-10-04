@@ -1,0 +1,21 @@
+{
+  "records": 5000,
+  "schema_error_records": 0,
+  "exact_duplicate_rows": 3201,
+  "split_counts": {
+    "train": 4800,
+    "validation": 200
+  },
+  "provenance_counts": {
+    "synthetic": 5000
+  },
+  "mean_confidence": 0.9,
+  "unique_users": 100,
+  "queries_seen_in_multiple_splits": 7,
+  "users_seen_in_multiple_splits": 100,
+  "notes": {
+    "query_overlap": "Expected in controlled benchmark templates; do not treat template overlap as semantic leakage by itself.",
+    "user_overlap": "Current synthetic split is interaction-level, so users may appear across train/validation. For strict user-level generalization, create a user-held-out split."
+  },
+  "validation_errors": []
+}

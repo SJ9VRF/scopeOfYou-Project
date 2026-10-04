@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bounded-self"
+version = "1.1.0"
+description = "Learning Where Personalization Is Allowed to Matter."
+authors = [{name = "Aura Yavary"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+train = ["torch>=2.3", "transformers>=4.45", "datasets>=3.0", "accelerate>=1.0", "peft>=0.13", "trl>=0.11"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+bounded-self = "personal_agi_pt.cli:main"
+bounded-self-serve = "personal_agi_pt.service:main"
+bounded-self-benchmark = "personal_agi_pt.benchmark_runner:main"
+bounded-self-audit = "personal_agi_pt.release_audit:main"
+bounded-self-public-bench = "personal_agi_pt.public_benchmarks:main"
+personal-agi-pt = "personal_agi_pt.cli:main"
+personal-agi-serve = "personal_agi_pt.service:main"
+personal-agi-benchmark = "personal_agi_pt.benchmark_runner:main"
+personal-agi-release-audit = "personal_agi_pt.release_audit:main"
+personal-agi-public-bench = "personal_agi_pt.public_benchmarks:main"

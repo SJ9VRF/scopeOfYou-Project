@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 6a6f2ae61fead6433d427768950da8099f41f608 Aura Yavary <aura@scope-of-you.local> 1790469541 +0000	commit (initial): Import audited Scope of You baseline
+6a6f2ae61fead6433d427768950da8099f41f608 61a24f951151727ae6c4ebf1496551a342ed4054 Aura Yavary <aura@scope-of-you.local> 1790469733 +0000	commit: Add evidence journal, failures, decisions, and raw artifacts
+61a24f951151727ae6c4ebf1496551a342ed4054 4b5f2ef2e4b1886a1817c82d6f9a8cfc4aa544ea Aura Yavary <aura@scope-of-you.local> 1790469817 +0000	commit: Surface the research process on the project page
+4b5f2ef2e4b1886a1817c82d6f9a8cfc4aa544ea a5460857ccf2fe9600cc892521db889bc7a7d6b7 Aura Yavary <aura@scope-of-you.local> 1790469850 +0000	commit: Trace the benchmark failure through redesign and trade-off
+a5460857ccf2fe9600cc892521db889bc7a7d6b7 81f105254f4eedef0c5ac42668270a083ff9d110 Aura Yavary <aura@scope-of-you.local> 1790469902 +0000	commit: Document the real git-history boundary
+81f105254f4eedef0c5ac42668270a083ff9d110 dec3ef35f437efee4b2e763ebdac5d987236e10d Aura Yavary <aura@scope-of-you.local> 1790469927 +0000	commit: Make the evidence layer reproducible and discoverable
+dec3ef35f437efee4b2e763ebdac5d987236e10d a766d245a9c93cdec06c702832925834e09f867c Aura Yavary <aura@scope-of-you.local> 1790469960 +0000	commit: Keep reviewer evidence and test counts self-consistent
+a766d245a9c93cdec06c702832925834e09f867c e2e96bf9920586220a9810372ad215fed9fbe25d Aura Yavary <aura@scope-of-you.local> 1790470001 +0000	commit: Raise frontier verification floor for Evidence Layer tests
+e2e96bf9920586220a9810372ad215fed9fbe25d d789e2fda5e03e335ccd729b3c02fdc8e2d93818 Aura Yavary <aura@scope-of-you.local> 1790470022 +0000	commit: Treat Git bundle as binary during release text audits
+d789e2fda5e03e335ccd729b3c02fdc8e2d93818 df6e6f2f3e39365e840f68dc7eb0ff45a2d47197 Aura Yavary <aura@scope-of-you.local> 1790470062 +0000	commit: Package real Git history without text-scanning binaries
+df6e6f2f3e39365e840f68dc7eb0ff45a2d47197 6770e5d3ae61ac7ad0a0e338162f4bbe5d866851 Aura Yavary <aura@scope-of-you.local> 1790470083 +0000	commit: Verify reviewer Git bundles as binary artifacts
+6770e5d3ae61ac7ad0a0e338162f4bbe5d866851 130bd2e02dcda43fac63b9ed66e121197110d95f Aura Yavary <aura@scope-of-you.local> 1790470120 +0000	commit: Make the Evidence Layer part of project-page compliance
+130bd2e02dcda43fac63b9ed66e121197110d95f 7b3536a7f0b24940cab28304f869f7af8ff0ad6e Aura Yavary <aura@scope-of-you.local> 1790488674 +0000	commit: Add failure taxonomy threat model and red-team coverage
+7b3536a7f0b24940cab28304f869f7af8ff0ad6e 44c65645bba58b622705d4b921dfc4c5073bf6d7 Aura Yavary <aura@scope-of-you.local> 1790488674 +0000	commit: Surface research ownership and enforce it in release verification
+44c65645bba58b622705d4b921dfc4c5073bf6d7 27118c2c684ce481fda4bb101fbd519977cbe60d Aura Yavary <aura@scope-of-you.local> 1790488714 +0000	commit: Include raw failure evidence in reviewer verification
+27118c2c684ce481fda4bb101fbd519977cbe60d 5efabfed18865000eca312ceb0f11086fee119de Aura Yavary <aura@scope-of-you.local> 1790488761 +0000	commit: Make the evidence-rich project page reproducibly standalone
+5efabfed18865000eca312ceb0f11086fee119de d2a07f9618116952a095cfe094f67f89c4107bdd Aura Yavary <aura@scope-of-you.local> 1790488774 +0000	commit: Fix standalone page root and include portfolio links

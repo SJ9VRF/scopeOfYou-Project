@@ -1,0 +1,57 @@
+{
+  "project": "Scope of You",
+  "author": "Aura Yavary",
+  "paper_title": "Scope of You: Learning Where Personalization Is Allowed to Matter",
+  "claim_policy": "Only executed entries may be described as results. Planned/external entries are explicit gates.",
+  "executed": {
+    "contractbench_implicit": {
+      "cases": 1460,
+      "held_out_users": 20,
+      "pco_robust": 0.7912,
+      "sft": 0.7135,
+      "batpo": 0.6866,
+      "five_seed_mean": 0.7909527410293381,
+      "five_seed_std": 0.0007611131706646803,
+      "batpo_delta": 0.1046040079797784,
+      "batpo_ci95": [
+        0.08654942003540593,
+        0.12235154311532435
+      ],
+      "held_out_user_wins_vs_batpo": 20,
+      "source": "reports/paper_grade_robust_study.json"
+    },
+    "utility_tradeoff": {
+      "pco_robust_personalbench": 0.9448,
+      "sft_personalbench": 0.9905,
+      "two_point_noninferiority": false,
+      "source": "reports/uncertainty_noninferiority.json"
+    },
+    "agentic_evaluator_v2": {
+      "scenarios": 288,
+      "trials_per_scenario": 5,
+      "scope": "evaluator stress test only; not an LLM capability result",
+      "source": "reports/agentic_contract_suite_v2.json"
+    },
+    "tests": {
+      "expected_minimum": 54,
+      "scope": "repository test suite"
+    }
+  },
+  "pending_external_gates": [
+    "two independent 7-8B generative model families",
+    "official public benchmark model outcomes",
+    "real blinded human labels/preferences",
+    "production tool/API execution",
+    "calibrated uncertainty claim"
+  ],
+  "frozen_external_plan": {
+    "headline_runs": 36,
+    "config": "configs/frontier/llm_experiment_matrix.json",
+    "result_schema": "external_runs/result.schema.json"
+  },
+  "provenance": {
+    "ledger": "experiments/EXPERIMENT_LEDGER.jsonl",
+    "verification": "scripts/verify_experiment_ledger.py",
+    "policy": "Ledger commands are reproduction entrypoints. Historical shell invocations are not asserted unless explicitly recorded."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "ensemble_uncertainty": {
+    "seeds": [
+      41,
+      53,
+      67,
+      79,
+      97
+    ],
+    "cases": 1460,
+    "by_contract": {
+      "apply": {
+        "n": 800,
+        "mean_sd": 0.006980736156707944,
+        "mean_score": 0.8124670799186453
+      },
+      "must_not_affect": {
+        "n": 60,
+        "mean_sd": 0.00012076217101912298,
+        "mean_score": 0.9961190176010132
+      },
+      "suppress": {
+        "n": 400,
+        "mean_sd": 0.006799262123048716,
+        "mean_score": 0.7173120863102377
+      },
+      "uncertain": {
+        "n": 200,
+        "mean_sd": 0.006807690443263492,
+        "mean_score": 0.7909914496466518
+      }
+    },
+    "uncertain_mean_sd": 0.006807690443263492,
+    "determinate_mean_sd": 0.0065964599244817375,
+    "uncertain_to_determinate_sd_ratio": 1.0320217997531986,
+    "error_detection_auroc_score_lt_0p70": 0.634725361943974,
+    "selective_curve": [
+      {
+        "coverage": 1.0,
+        "n": 1460,
+        "contract_score": 0.7910026914002757,
+        "error_rate_lt_0p70": 0.2732876712328767,
+        "max_ensemble_sd": 0.017914960086405758
+      },
+      {
+        "coverage": 0.9,
+        "n": 1314,
+        "contract_score": 0.7980198355038371,
+        "error_rate_lt_0p70": 0.256468797564688,
+        "max_ensemble_sd": 0.010845816994928141
+      },
+      {
+        "coverage": 0.8,
+        "n": 1168,
+        "contract_score": 0.8069227104785865,
+        "error_rate_lt_0p70": 0.23715753424657535,
+        "max_ensemble_sd": 0.009358227552557013
+      },
+      {
+        "coverage": 0.7,
+        "n": 1022,
+        "contract_score": 0.8193061195309557,
+        "error_rate_lt_0p70": 0.21232876712328766,
+        "max_ensemble_sd": 0.008223422742951287
+      },
+      {
+        "coverage": 0.5,
+        "n": 730,
+        "contract_score": 0.8337814810604673,
+        "error_rate_lt_0p70": 0.19863013698630136,
+        "max_ensemble_sd": 0.006518097298481655
+      },
+      {
+        "coverage": 0.3,
+        "n": 438,
+        "contract_score": 0.8551520703620699,
+        "error_rate_lt_0p70": 0.18036529680365296,
+        "max_ensemble_sd": 0.004830153687233229
+      }
+    ],
+    "interpretation": "Seed disagreement is an epistemic diagnostic, not a calibrated probability."
+  },
+  "utility_noninferiority": {
+    "comparison": "PCO-Robust five-seed user mean minus SFT",
+    "users": 20,
+    "delta": -0.045553651797853326,
+    "ci90": [
+      -0.047499016734708556,
+      -0.043554959690898724
+    ],
+    "ci95": [
+      -0.047843263552471746,
+      -0.043147743216111555
+    ],
+    "draws": 10000,
+    "margins": {
+      "0.01": {
+        "margin": 0.01,
+        "passes": false,
+        "lower_ci90": -0.047499016734708556
+      },
+      "0.02": {
+        "margin": 0.02,
+        "passes": false,
+        "lower_ci90": -0.047499016734708556
+      },
+      "0.03": {
+        "margin": 0.03,
+        "passes": false,
+        "lower_ci90": -0.047499016734708556
+      },
+      "0.05": {
+        "margin": 0.05,
+        "passes": true,
+        "lower_ci90": -0.047499016734708556
+      }
+    },
+    "decision_rule": "Pass only if the lower bound of the paired 90% bootstrap CI exceeds -margin."
+  }
+}

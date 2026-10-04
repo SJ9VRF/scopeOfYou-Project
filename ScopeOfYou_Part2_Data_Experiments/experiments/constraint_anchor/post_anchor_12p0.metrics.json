@@ -1,0 +1,7 @@
+{
+  "steps": 35,
+  "final_reward": 34.18766403198242,
+  "reference_penalty": 0.0037487486843019724,
+  "anchor_loss": 0.0035214205272495747,
+  "checkpoint": "/mnt/data/workflag6/bounded-self/experiments/constraint_anchor/post_anchor_12p0.pt"
+}

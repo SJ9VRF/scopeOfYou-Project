@@ -1,0 +1,8 @@
+{
+  "backend": "torch_behavior_adapter",
+  "train_examples": 975,
+  "validation_examples": 900,
+  "best_val_mse": 0.0014503259444609284,
+  "epochs": 14,
+  "checkpoint": "/mnt/data/workflag6/bounded-self/experiments/data_scale/sft_f25_s13.pt"
+}

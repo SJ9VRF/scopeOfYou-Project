@@ -1,0 +1,14 @@
+{
+  "steps": 120,
+  "checkpoint": "checkpoints/post_trained_v31_contract.pt",
+  "step": 120,
+  "loss": -33.29121398925781,
+  "reward": 35.42411804199219,
+  "trust": 0.47298508882522583,
+  "base_anchor": 0.004875160753726959,
+  "user_mut": 0.005198311526328325,
+  "user_inv": 5.904286126678926e-07,
+  "context": 0.05110664665699005,
+  "attack": 3.615234891185537e-05,
+  "invariants": 2.8325905532256e-06
+}

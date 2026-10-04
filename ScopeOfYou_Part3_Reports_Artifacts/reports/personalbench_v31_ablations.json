@@ -1,0 +1,257 @@
+{
+  "data_scale": [
+    {
+      "fraction": 0.1,
+      "seed": 11,
+      "train_examples": 390,
+      "best_val_mse": 0.00454594474285841,
+      "test": {
+        "personalization": 0.9749851181755463,
+        "factuality": 0.9854211679597695,
+        "sycophancy": 0.988071201990048,
+        "proactivity": 0.8683631998483091,
+        "personalbench_mean": 0.9542101719934183
+      }
+    },
+    {
+      "fraction": 0.1,
+      "seed": 13,
+      "train_examples": 390,
+      "best_val_mse": 0.003694225335493684,
+      "test": {
+        "personalization": 0.9753431981876493,
+        "factuality": 0.9860202793280284,
+        "sycophancy": 0.9889421878258388,
+        "proactivity": 0.8706516250741978,
+        "personalbench_mean": 0.9552393226039285
+      }
+    },
+    {
+      "fraction": 0.1,
+      "seed": 17,
+      "train_examples": 390,
+      "best_val_mse": 0.0038980734534561634,
+      "test": {
+        "personalization": 0.9779169017275174,
+        "factuality": 0.9851428842544556,
+        "sycophancy": 0.9876216502487659,
+        "proactivity": 0.881383156279847,
+        "personalbench_mean": 0.9580161481276465
+      }
+    },
+    {
+      "fraction": 0.25,
+      "seed": 11,
+      "train_examples": 975,
+      "best_val_mse": 0.001549545326270163,
+      "test": {
+        "personalization": 0.9891150066914658,
+        "factuality": 0.9899889255563418,
+        "sycophancy": 0.9919596569240093,
+        "proactivity": 0.9424238136125107,
+        "personalbench_mean": 0.9783718506960819
+      }
+    },
+    {
+      "fraction": 0.25,
+      "seed": 13,
+      "train_examples": 975,
+      "best_val_mse": 0.0014503259444609284,
+      "test": {
+        "personalization": 0.9875624305134019,
+        "factuality": 0.9922714211543401,
+        "sycophancy": 0.9929572561879952,
+        "proactivity": 0.946945864524506,
+        "personalbench_mean": 0.9799342430950608
+      }
+    },
+    {
+      "fraction": 0.25,
+      "seed": 17,
+      "train_examples": 975,
+      "best_val_mse": 0.0015574534190818667,
+      "test": {
+        "personalization": 0.9891269410016637,
+        "factuality": 0.9930995367467403,
+        "sycophancy": 0.9913152249157429,
+        "proactivity": 0.9434013478222614,
+        "personalbench_mean": 0.9792357626216021
+      }
+    },
+    {
+      "fraction": 0.5,
+      "seed": 11,
+      "train_examples": 1950,
+      "best_val_mse": 0.0011967612663283944,
+      "test": {
+        "personalization": 0.9893102080238362,
+        "factuality": 0.9935499972601731,
+        "sycophancy": 0.9948038717110952,
+        "proactivity": 0.9534651000426462,
+        "personalbench_mean": 0.9827822942594376
+      }
+    },
+    {
+      "fraction": 0.5,
+      "seed": 13,
+      "train_examples": 1950,
+      "best_val_mse": 0.00109869206789881,
+      "test": {
+        "personalization": 0.9871294701211154,
+        "factuality": 0.9951388787726562,
+        "sycophancy": 0.9953181023895741,
+        "proactivity": 0.9500910659223795,
+        "personalbench_mean": 0.9819193793014312
+      }
+    },
+    {
+      "fraction": 0.5,
+      "seed": 17,
+      "train_examples": 1950,
+      "best_val_mse": 0.0009187121759168804,
+      "test": {
+        "personalization": 0.9899675557315349,
+        "factuality": 0.9952467959125837,
+        "sycophancy": 0.9936454033354918,
+        "proactivity": 0.959532785025922,
+        "personalbench_mean": 0.984598135001383
+      }
+    },
+    {
+      "fraction": 1.0,
+      "seed": 11,
+      "train_examples": 3900,
+      "best_val_mse": 0.0007712646620348096,
+      "test": {
+        "personalization": 0.9899637693104645,
+        "factuality": 0.9946146400769552,
+        "sycophancy": 0.995751351416111,
+        "proactivity": 0.9621769183366249,
+        "personalbench_mean": 0.9856266697850389
+      }
+    },
+    {
+      "fraction": 1.0,
+      "seed": 13,
+      "train_examples": 3900,
+      "best_val_mse": 0.0007345263147726655,
+      "test": {
+        "personalization": 0.9882877001849314,
+        "factuality": 0.9957371506591638,
+        "sycophancy": 0.9959060022731622,
+        "proactivity": 0.9672503435169657,
+        "personalbench_mean": 0.9867952991585558
+      }
+    },
+    {
+      "fraction": 1.0,
+      "seed": 17,
+      "train_examples": 3900,
+      "best_val_mse": 0.0007831691182218492,
+      "test": {
+        "personalization": 0.9909498168962697,
+        "factuality": 0.996035544872284,
+        "sycophancy": 0.9949276393155256,
+        "proactivity": 0.9621141427456091,
+        "personalbench_mean": 0.9860067859574221
+      }
+    }
+  ],
+  "drift": [
+    {
+      "train_drift_probability": 0.0,
+      "test": {
+        "personalization": 0.9908086326358219,
+        "factuality": 0.9962422042588392,
+        "sycophancy": 0.9963559252520402,
+        "proactivity": 0.969901840192328,
+        "personalbench_mean": 0.9883271505847573
+      }
+    },
+    {
+      "train_drift_probability": 0.2,
+      "test": {
+        "personalization": 0.993725227650255,
+        "factuality": 0.997713380108277,
+        "sycophancy": 0.9978119839727878,
+        "proactivity": 0.9726402563715975,
+        "personalbench_mean": 0.9904727120257293
+      }
+    }
+  ],
+  "raw_beta": [
+    {
+      "beta": 0.05,
+      "test": {
+        "personalization": 0.8608662187968537,
+        "factuality": 0.9982367174327373,
+        "sycophancy": 0.9987717938919862,
+        "proactivity": 0.5304481274545193,
+        "personalbench_mean": 0.8470807143940241
+      }
+    },
+    {
+      "beta": 0.15,
+      "test": {
+        "personalization": 0.8608897929829545,
+        "factuality": 0.9982381459573905,
+        "sycophancy": 0.9987727522850036,
+        "proactivity": 0.5304899404108524,
+        "personalbench_mean": 0.8470976579090502
+      }
+    },
+    {
+      "beta": 0.5,
+      "test": {
+        "personalization": 0.8609683274812221,
+        "factuality": 0.998242964297533,
+        "sycophancy": 0.9987762062748273,
+        "proactivity": 0.5306343540211519,
+        "personalbench_mean": 0.8471554630186836
+      }
+    },
+    {
+      "beta": 2.0,
+      "test": {
+        "personalization": 0.861305156574895,
+        "factuality": 0.9982640291253726,
+        "sycophancy": 0.9987909505267938,
+        "proactivity": 0.5313119821906089,
+        "personalbench_mean": 0.8474180296044176
+      }
+    }
+  ],
+  "constraint_anchor": [
+    {
+      "anchor": 1.0,
+      "test": {
+        "personalization": 0.9426004358259961,
+        "factuality": 0.9982554546495279,
+        "sycophancy": 0.9983802947898706,
+        "proactivity": 0.874658339663595,
+        "personalbench_mean": 0.9534736312322474
+      }
+    },
+    {
+      "anchor": 4.0,
+      "test": {
+        "personalization": 0.9428362226209914,
+        "factuality": 0.9982548606395721,
+        "sycophancy": 0.9983793407678604,
+        "proactivity": 0.8752873328457276,
+        "personalbench_mean": 0.9536894392185379
+      }
+    },
+    {
+      "anchor": 12.0,
+      "test": {
+        "personalization": 0.9434570637596771,
+        "factuality": 0.998252648760875,
+        "sycophancy": 0.9983761871854464,
+        "proactivity": 0.8768424182762702,
+        "personalbench_mean": 0.9542320794955672
+      }
+    }
+  ],
+  "wall_seconds_this_resume": 31.593232853000018
+}

@@ -1,0 +1,15 @@
+{
+  "steps": 180,
+  "checkpoint": "checkpoints/pco_robust_consistency_seed_41.pt",
+  "step": 180,
+  "loss": -30.556549072265625,
+  "reward": 34.49473571777344,
+  "trust": 0.6947439908981323,
+  "base_anchor": 0.007277308963239193,
+  "user_mut": 0.0474846325814724,
+  "user_inv": 1.0770932021841872e-06,
+  "context": 0.06425878405570984,
+  "attack": 3.180911153322086e-05,
+  "invariants": 7.85446354711894e-06,
+  "consistency": 0.005610194988548756
+}

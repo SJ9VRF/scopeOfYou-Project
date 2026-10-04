@@ -1,0 +1,13 @@
+{
+  "steps": 120,
+  "checkpoint": "/mnt/data/pt06/bounded-self/checkpoints/post_trained_v31_boundary.pt",
+  "step": 120,
+  "loss": -34.73573303222656,
+  "reward": 35.5731201171875,
+  "trust": 0.21055664122104645,
+  "invariant": 4.893535106020863e-07,
+  "mutable_anchor": 0.018453488126397133,
+  "mutable_cf": 0.010090037249028683,
+  "inv_cf": 9.626575803167725e-08,
+  "uncertainty_guard": 0.0015916761476546526
+}

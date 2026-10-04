@@ -1,0 +1,5 @@
+{
+  "pairs": 11700,
+  "final_pair_accuracy": 1.0,
+  "checkpoint": "/mnt/data/workflag6/bounded-self/checkpoints/reward_model_v31.pt"
+}

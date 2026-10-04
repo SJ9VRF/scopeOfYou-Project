@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scope of You External LLM Result",
+  "type": "object",
+  "required": ["run_id", "backbone", "method", "seed", "model_revision", "data_hashes", "hardware", "compute", "metrics", "artifact_hashes"],
+  "properties": {
+    "run_id": {"type": "string"},
+    "backbone": {"type": "string"},
+    "method": {"type": "string"},
+    "seed": {"type": "integer"},
+    "model_revision": {"type": "string", "minLength": 1},
+    "tokenizer_revision": {"type": "string"},
+    "data_hashes": {"type": "object"},
+    "hardware": {"type": "object"},
+    "compute": {
+      "type": "object",
+      "required": ["gpu_hours", "tokens_processed"],
+      "properties": {
+        "gpu_hours": {"type": "number", "minimum": 0},
+        "tokens_processed": {"type": "integer", "minimum": 0}
+      }
+    },
+    "metrics": {"type": "object"},
+    "artifact_hashes": {"type": "object"},
+    "status": {"enum": ["completed", "failed", "aborted"]}
+  }
+}

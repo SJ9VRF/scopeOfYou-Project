@@ -1,0 +1,180 @@
+{
+  "status": "complete",
+  "benchmark_version": "v3",
+  "examples": 6000,
+  "profiles": 100,
+  "quality": {
+    "records": 6000,
+    "schema_error_records": 0,
+    "exact_duplicate_rows": 729,
+    "split_counts": {
+      "validation": 600,
+      "train": 4800,
+      "test": 600
+    },
+    "provenance_counts": {
+      "synthetic": 6000
+    },
+    "mean_confidence": 0.9,
+    "unique_users": 100,
+    "queries_seen_in_multiple_splits": 214,
+    "users_seen_in_multiple_splits": 0,
+    "notes": {
+      "query_overlap": "Expected in controlled benchmark templates; do not treat template overlap as semantic leakage by itself.",
+      "user_overlap": "No user crosses splits; this is user-held-out."
+    },
+    "validation_errors": []
+  },
+  "preference_pairs": 14400,
+  "sft_training": {
+    "backend": "torch_behavior_adapter",
+    "train_examples": 4800,
+    "validation_examples": 600,
+    "best_val_mse": 0.00019403141050133854,
+    "epochs": 24,
+    "checkpoint": "/mnt/data/workflag6/bounded-self/checkpoints/sft_behavior_v3.pt"
+  },
+  "reward_model": {
+    "pairs": 14400,
+    "final_pair_accuracy": 1.0,
+    "checkpoint": "/mnt/data/workflag6/bounded-self/checkpoints/reward_model_v3.pt"
+  },
+  "raw_optimization": {
+    "steps": 50,
+    "final_reward": 43.02732467651367,
+    "drift_penalty": 0.07074739784002304,
+    "checkpoint": "/mnt/data/workflag6/bounded-self/checkpoints/post_trained_v3_raw.pt"
+  },
+  "constrained_optimization": {
+    "steps": 80,
+    "final_reward": 36.72721481323242,
+    "reference_penalty": 0.0054879398085176945,
+    "anchor_loss": 0.00527581200003624,
+    "checkpoint": "/mnt/data/workflag6/bounded-self/checkpoints/post_trained_v3_constrained.pt"
+  },
+  "test_summary": {
+    "sft": {
+      "personalization": 0.9933331286708514,
+      "factuality": 0.9972129585345586,
+      "sycophancy": 0.99738993704319,
+      "proactivity": 0.9754854684780041,
+      "personalbench_mean": 0.9908553731816511
+    },
+    "raw": {
+      "personalization": 0.8629525762932705,
+      "factuality": 0.9998166368405024,
+      "sycophancy": 0.9998619494835536,
+      "proactivity": 0.345091078821818,
+      "personalbench_mean": 0.8019305603597862
+    },
+    "constrained": {
+      "personalization": 0.9357475128987184,
+      "factuality": 0.9991929518183073,
+      "sycophancy": 0.9992370073994,
+      "proactivity": 0.8512764792829752,
+      "personalbench_mean": 0.9463634878498502
+    }
+  },
+  "bootstrap_test": {
+    "sft_to_raw": {
+      "users": 10,
+      "bootstrap_draws": 2000,
+      "metrics": {
+        "personalization": {
+          "delta": -0.1303805523775809,
+          "ci95": [
+            -0.13857709286266862,
+            -0.12082716730123502
+          ]
+        },
+        "factuality": {
+          "delta": 0.0026036783059437906,
+          "ci95": [
+            0.0022293940186500437,
+            0.002991263667742383
+          ]
+        },
+        "sycophancy": {
+          "delta": 0.002472012440363558,
+          "ci95": [
+            0.0021930698553720984,
+            0.0027688199281692637
+          ]
+        },
+        "proactivity": {
+          "delta": -0.6303943896561861,
+          "ci95": [
+            -0.7453042051677903,
+            -0.5056914731755853
+          ]
+        },
+        "personalbench_mean": {
+          "delta": -0.18892481282186488,
+          "ci95": [
+            -0.21634140065320484,
+            -0.15860720449201082
+          ]
+        }
+      }
+    },
+    "sft_to_constrained": {
+      "users": 10,
+      "bootstrap_draws": 2000,
+      "metrics": {
+        "personalization": {
+          "delta": -0.05758561577213307,
+          "ci95": [
+            -0.0665419800449163,
+            -0.04958123160215715
+          ]
+        },
+        "factuality": {
+          "delta": 0.001979993283748627,
+          "ci95": [
+            0.0017406520247459367,
+            0.0022355694572130822
+          ]
+        },
+        "sycophancy": {
+          "delta": 0.0018470703562100677,
+          "ci95": [
+            0.0016891510287920576,
+            0.0020204997062683193
+          ]
+        },
+        "proactivity": {
+          "delta": -0.12420898919502893,
+          "ci95": [
+            -0.14211670696934062,
+            -0.10878120515545206
+          ]
+        },
+        "personalbench_mean": {
+          "delta": -0.044491885331800804,
+          "ci95": [
+            -0.048909558137785636,
+            -0.040595382976221506
+          ]
+        }
+      }
+    }
+  },
+  "raw_test_failures": {
+    "failures": 528,
+    "counts": {
+      "PRO-01": 522,
+      "PERS-01": 6
+    },
+    "split": "test",
+    "examples": 600
+  },
+  "constrained_test_failures": {
+    "failures": 12,
+    "counts": {
+      "PRO-01": 12
+    },
+    "split": "test",
+    "examples": 600
+  },
+  "wall_seconds": 18.007178984999996
+}

@@ -1,0 +1,5 @@
+{
+  "pairs": 10000,
+  "final_pair_accuracy": 1.0,
+  "checkpoint": "/mnt/data/bounded-self/checkpoints/reward_model.pt"
+}

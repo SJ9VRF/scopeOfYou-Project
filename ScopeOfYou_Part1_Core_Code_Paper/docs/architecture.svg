@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+<title id="title">Scope of You architecture — Aura Yavary</title>
+<desc id="desc">Closed loop from user simulation and data through SFT, reward modeling, optimization, evaluation, failure mining, constrained repair, and serving.</desc>
+<style>
+  .box{fill:#fff;stroke:#111;stroke-width:2;rx:14}.head{font:700 22px sans-serif}.txt{font:16px sans-serif}.small{font:14px sans-serif}.arrow{stroke:#111;stroke-width:2.5;fill:none;marker-end:url(#m)}
+</style>
+<defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#111"/></marker></defs>
+<rect x="40" y="50" width="210" height="100" class="box"/><text x="145" y="88" text-anchor="middle" class="head">User state</text><text x="145" y="117" text-anchor="middle" class="txt">profiles • drift • context</text>
+<rect x="320" y="50" width="220" height="100" class="box"/><text x="430" y="88" text-anchor="middle" class="head">Data engine</text><text x="430" y="117" text-anchor="middle" class="txt">splits • pairs • audits</text>
+<rect x="610" y="50" width="220" height="100" class="box"/><text x="720" y="88" text-anchor="middle" class="head">SFT</text><text x="720" y="117" text-anchor="middle" class="txt">behavioral adapter</text>
+<rect x="900" y="50" width="220" height="100" class="box"/><text x="1010" y="88" text-anchor="middle" class="head">Reward model</text><text x="1010" y="117" text-anchor="middle" class="txt">pairwise preference</text>
+<path d="M250 100 H320" class="arrow"/><path d="M540 100 H610" class="arrow"/><path d="M830 100 H900" class="arrow"/>
+
+<rect x="900" y="245" width="220" height="105" class="box"/><text x="1010" y="282" text-anchor="middle" class="head">Optimization</text><text x="1010" y="311" text-anchor="middle" class="txt">raw reward objective</text>
+<rect x="610" y="245" width="220" height="105" class="box"/><text x="720" y="282" text-anchor="middle" class="head">PersonalBench</text><text x="720" y="311" text-anchor="middle" class="txt">held-out users + CI</text>
+<rect x="320" y="245" width="220" height="105" class="box"/><text x="430" y="282" text-anchor="middle" class="head">Failure mining</text><text x="430" y="311" text-anchor="middle" class="txt">taxonomy • hard cases</text>
+<rect x="40" y="245" width="210" height="105" class="box"/><text x="145" y="282" text-anchor="middle" class="head">Repair</text><text x="145" y="311" text-anchor="middle" class="txt">anchors • invariants</text>
+<path d="M1010 150 V245" class="arrow"/><path d="M900 297 H830" class="arrow"/><path d="M610 297 H540" class="arrow"/><path d="M320 297 H250" class="arrow"/>
+<path d="M145 350 V420 H720 V350" class="arrow"/>
+
+<rect x="335" y="455" width="245" height="110" class="box"/><text x="458" y="495" text-anchor="middle" class="head">Independent runner</text><text x="458" y="524" text-anchor="middle" class="txt">checkpoint comparison</text><text x="458" y="548" text-anchor="middle" class="small">paired bootstrap</text>
+<rect x="650" y="455" width="245" height="110" class="box"/><text x="773" y="495" text-anchor="middle" class="head">Local service</text><text x="773" y="524" text-anchor="middle" class="txt">/health • /predict</text><text x="773" y="548" text-anchor="middle" class="small">browser demo</text>
+<path d="M720 350 V420 H458 V455" class="arrow"/><path d="M720 420 H773 V455" class="arrow"/>
+<text x="600" y="625" text-anchor="middle" class="small">Executed CPU path is evidence-bearing; optional Transformers + PEFT backend is a scale-up path.</text>
+</svg>

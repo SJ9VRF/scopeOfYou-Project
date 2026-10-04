@@ -1,0 +1,21 @@
+% Supplementary appendix for Scope of You
+\appendix
+\section{Diagnostic objective settings}
+The controlled PCO optimizer uses reward, confidence-scaled trust, supervised anchoring, user-state intervention, context selection, protected preservation, and invariant-attack terms. The main robust runs use the same fixed objective weights across five seeds. Diagnostic ablations and the loss-scale frontier use a smaller fixed training budget and are not mixed with the headline five-seed estimate.
+
+\section{Proof of the average leakage bound}
+For each protected behavior dimension $d$, let $\Delta_d=b_d(x,I_u(u))-b_d(x,u)$. If $\mathbb{E}[\Delta_d^2]\le\epsilon_d^2$, then by Cauchy--Schwarz,
+\begin{equation}
+\mathbb{E}|\Delta_d| \le \sqrt{\mathbb{E}[\Delta_d^2]} \le \epsilon_d.
+\end{equation}
+Linearity of expectation then gives
+\begin{equation}
+\mathbb{E}\left[\frac{1}{|P|}\sum_{d\in P}|\Delta_d|\right]
+\le \frac{1}{|P|}\sum_{d\in P}\epsilon_d.
+\end{equation}
+The same argument yields an average absolute bound for the squared suppress loss around a neutral target. These propositions certify only the explicitly measured coordinates.
+
+\section{Controlled compute disclosure}
+A representative 180-step, batch-512 headline optimization run using the frozen tensor cache required 7.49 seconds wall time on a five-vCPU AMD EPYC 7763 runtime, with 345,880 KiB peak resident memory and no accelerator. Five headline optimization seeds therefore require roughly 37.5 seconds of model-optimization wall time with cached tensors; preprocessing, evaluation, ablations, failed experiments, and artifact generation are additional. No GPU-hour estimate is reported because the planned 7--8B study has not been executed.
+
+

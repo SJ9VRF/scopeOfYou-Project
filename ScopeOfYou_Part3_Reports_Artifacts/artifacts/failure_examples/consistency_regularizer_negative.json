@@ -1,0 +1,43 @@
+{
+  "experiment": "paraphrase_consistency_regularizer",
+  "decision": "rejected_from_headline_method",
+  "reason": "did not improve paraphrase robustness",
+  "baseline_pco_robust": {
+    "personalbench": 0.9448419958353043,
+    "contract_score": 0.7911640483267504,
+    "id_score": 0.7809264914185873,
+    "ood_score": 0.8005933770579531,
+    "paraphrase_robustness": 0.8703007030362884,
+    "worst_contract": 0.718661072107032,
+    "contracts": {
+      "apply": 0.8118638248683885,
+      "must_not_affect": 0.996101671953996,
+      "suppress": 0.718661072107032,
+      "uncertain": 0.7918896075114608
+    },
+    "users": 20,
+    "cases": 1460
+  },
+  "consistency_regularized": {
+    "personalbench": 0.9451402574777603,
+    "contract_score": 0.7918290899925138,
+    "id_score": 0.781920201378635,
+    "ood_score": 0.8009556979263496,
+    "paraphrase_robustness": 0.8689401589240879,
+    "worst_contract": 0.7219008699608966,
+    "contracts": {
+      "apply": 0.8107248405029998,
+      "must_not_affect": 0.9961818575859069,
+      "suppress": 0.7219008699608966,
+      "uncertain": 0.7947966977357864
+    },
+    "users": 20,
+    "cases": 1460
+  },
+  "delta": {
+    "personalbench": 0.0002982616424560547,
+    "contract_score": 0.0006650416657634217,
+    "paraphrase_robustness": -0.0013605441122004347,
+    "worst_contract": 0.0032397978538646344
+  }
+}

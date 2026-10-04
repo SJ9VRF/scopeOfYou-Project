@@ -1,0 +1,22 @@
+{
+  "records": 6000,
+  "schema_error_records": 0,
+  "exact_duplicate_rows": 0,
+  "split_counts": {
+    "train": 3900,
+    "test": 1200,
+    "validation": 900
+  },
+  "provenance_counts": {
+    "synthetic": 6000
+  },
+  "mean_confidence": 0.9,
+  "unique_users": 100,
+  "queries_seen_in_multiple_splits": 0,
+  "users_seen_in_multiple_splits": 0,
+  "notes": {
+    "query_overlap": "Expected in controlled benchmark templates; do not treat template overlap as semantic leakage by itself.",
+    "user_overlap": "No user crosses splits; this is user-held-out."
+  },
+  "validation_errors": []
+}

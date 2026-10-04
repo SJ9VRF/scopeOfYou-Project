@@ -1,0 +1,1 @@
+{"id":"bp1","prompt":"Draft a note to a bank officer.","preference_attribute":["Be factual","Use emojis","Call me Nova"],"preference_label":[true,false,false],"name":"Nova","task":"loan","recipient":"Bank Officer","domain":"finance"}

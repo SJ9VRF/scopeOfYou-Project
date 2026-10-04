@@ -1,0 +1,6 @@
+{
+  "steps": 50,
+  "final_reward": 40.78080749511719,
+  "drift_penalty": 0.06954589486122131,
+  "checkpoint": "/mnt/data/workflag6/bounded-self/checkpoints/post_trained_v31_raw.pt"
+}

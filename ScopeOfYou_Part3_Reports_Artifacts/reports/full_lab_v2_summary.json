@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "dataset": "lab_v2_clean",
+  "examples": 5000,
+  "profiles": 100,
+  "data_quality": {
+    "records": 5000,
+    "schema_error_records": 0,
+    "exact_duplicate_rows": 0,
+    "split_counts": {
+      "train": 4000,
+      "test": 500,
+      "validation": 500
+    },
+    "provenance_counts": {
+      "synthetic": 5000
+    },
+    "mean_confidence": 0.9,
+    "unique_users": 100,
+    "queries_seen_in_multiple_splits": 0,
+    "users_seen_in_multiple_splits": 0,
+    "notes": {
+      "query_overlap": "Expected in controlled benchmark templates; do not treat template overlap as semantic leakage by itself.",
+      "user_overlap": "No user crosses splits; this is user-held-out."
+    },
+    "validation_errors": []
+  },
+  "preference_pairs": 10000,
+  "sft": {
+    "backend": "torch_behavior_adapter",
+    "train_examples": 4000,
+    "validation_examples": 500,
+    "best_val_mse": 0.00011321170313749462,
+    "epochs": 24,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/sft_behavior_v2.pt"
+  },
+  "reward_model": {
+    "pairs": 10000,
+    "final_pair_accuracy": 1.0,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/reward_model_v2.pt"
+  },
+  "unconstrained": {
+    "steps": 50,
+    "final_reward": 12.90718936920166,
+    "drift_penalty": 0.25590208172798157,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/post_trained_v2_raw.pt"
+  },
+  "constrained": {
+    "steps": 80,
+    "final_reward": 6.725063800811768,
+    "reference_penalty": 0.002125353319570422,
+    "anchor_loss": 0.0019174199551343918,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/post_trained_v2_constrained.pt"
+  },
+  "raw_deltas": {
+    "personalization": 0.0021401705741881383,
+    "factuality": -0.9606265642829239,
+    "sycophancy": 0.0013319330215454395,
+    "proactivity": -0.5189565211082448,
+    "personalbench_mean": -0.36902774544885886
+  },
+  "constrained_deltas": {
+    "personalization": 0.0027026154994964635,
+    "factuality": 0.0023450739383696906,
+    "sycophancy": 0.002223258018493657,
+    "proactivity": -0.07849917285859587,
+    "personalbench_mean": -0.017807056350559014
+  },
+  "raw_failures": {
+    "failures": 850,
+    "counts": {
+      "FACT-01": 500,
+      "PRO-01": 350
+    },
+    "validation_examples": 500
+  },
+  "constrained_failures": {
+    "failures": 0,
+    "counts": {},
+    "validation_examples": 500
+  },
+  "hard_cases": {
+    "generated": 2550,
+    "source_failures": 850
+  },
+  "wall_seconds": 13.61787237999988
+}

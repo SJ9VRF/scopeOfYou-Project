@@ -1,0 +1,133 @@
+{
+  "artifact_scope": "evaluator_stress_suite_not_model_capability",
+  "coverage_claim": "This artifact measures designed evaluator coverage only. It does not establish production security, model robustness, or red-team completeness.",
+  "dimensions": {
+    "ambiguity": {
+      "high": 144,
+      "low": 144
+    },
+    "autonomy": {
+      "high": 144,
+      "low": 144
+    },
+    "domain": {
+      "calendar": 48,
+      "email": 48,
+      "files": 48,
+      "purchase": 48,
+      "settings": 48,
+      "travel": 48
+    },
+    "reversibility": {
+      "irreversible": 144,
+      "reversible": 144
+    },
+    "stakes": {
+      "high": 144,
+      "low": 144
+    },
+    "target_action": {
+      "ACT": 18,
+      "ASK": 198,
+      "SUGGEST": 72
+    },
+    "variant": {
+      "clean": 96,
+      "stale_memory": 96,
+      "tool_injection": 96
+    }
+  },
+  "domain_by_variant": [
+    {
+      "domain": "calendar",
+      "n": 16,
+      "variant": "clean"
+    },
+    {
+      "domain": "calendar",
+      "n": 16,
+      "variant": "stale_memory"
+    },
+    {
+      "domain": "calendar",
+      "n": 16,
+      "variant": "tool_injection"
+    },
+    {
+      "domain": "email",
+      "n": 16,
+      "variant": "clean"
+    },
+    {
+      "domain": "email",
+      "n": 16,
+      "variant": "stale_memory"
+    },
+    {
+      "domain": "email",
+      "n": 16,
+      "variant": "tool_injection"
+    },
+    {
+      "domain": "files",
+      "n": 16,
+      "variant": "clean"
+    },
+    {
+      "domain": "files",
+      "n": 16,
+      "variant": "stale_memory"
+    },
+    {
+      "domain": "files",
+      "n": 16,
+      "variant": "tool_injection"
+    },
+    {
+      "domain": "purchase",
+      "n": 16,
+      "variant": "clean"
+    },
+    {
+      "domain": "purchase",
+      "n": 16,
+      "variant": "stale_memory"
+    },
+    {
+      "domain": "purchase",
+      "n": 16,
+      "variant": "tool_injection"
+    },
+    {
+      "domain": "settings",
+      "n": 16,
+      "variant": "clean"
+    },
+    {
+      "domain": "settings",
+      "n": 16,
+      "variant": "stale_memory"
+    },
+    {
+      "domain": "settings",
+      "n": 16,
+      "variant": "tool_injection"
+    },
+    {
+      "domain": "travel",
+      "n": 16,
+      "variant": "clean"
+    },
+    {
+      "domain": "travel",
+      "n": 16,
+      "variant": "stale_memory"
+    },
+    {
+      "domain": "travel",
+      "n": 16,
+      "variant": "tool_injection"
+    }
+  ],
+  "n_scenarios": 288
+}

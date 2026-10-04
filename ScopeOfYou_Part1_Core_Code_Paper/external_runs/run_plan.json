@@ -1,0 +1,258 @@
+{
+  "status": "plan only; contains no results",
+  "n_runs": 36,
+  "runs": [
+    {
+      "run_id": "32c8772a9f99",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "base_instruct",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "9022fa3289fb",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "base_instruct",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "bb65deb73909",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "base_instruct",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "1bf5ed1c2675",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "sft_personalization",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "f948d187f2b2",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "sft_personalization",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "1b51efb1f191",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "sft_personalization",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "b9033b63781b",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "profile_conditioning",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "41bd4665cbea",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "profile_conditioning",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "6d7ce25f53ae",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "profile_conditioning",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "d57886470212",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "personalized_dpo",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "339dc53a19d9",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "personalized_dpo",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "8ab811017d2d",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "personalized_dpo",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "f2125dc11655",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "external_personalized_alignment_baseline",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "7eabb2c5a16c",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "external_personalized_alignment_baseline",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "72e36d7f22af",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "external_personalized_alignment_baseline",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "a1d3df676f37",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "pco_robust",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "f294a059ad63",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "pco_robust",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "76de7734d2f3",
+      "backbone": "Qwen/Qwen3-8B",
+      "method": "pco_robust",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "51d5b26d0de2",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "base_instruct",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "ff12e88dde10",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "base_instruct",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "b6abd2fe3b00",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "base_instruct",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "6b107850f1fe",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "sft_personalization",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "fe341744c507",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "sft_personalization",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "1d8115238db8",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "sft_personalization",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "64448f6c87ba",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "profile_conditioning",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "18642c8a6f55",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "profile_conditioning",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "f5d811dfaec7",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "profile_conditioning",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "b4503bc65f49",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "personalized_dpo",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "9c30e5fe7181",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "personalized_dpo",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "9b64cb170aa7",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "personalized_dpo",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "7531a85d2549",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "external_personalized_alignment_baseline",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "57911f5b4538",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "external_personalized_alignment_baseline",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "4e8d10f3218e",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "external_personalized_alignment_baseline",
+      "seed": 47,
+      "status": "planned"
+    },
+    {
+      "run_id": "a7e2c510c04f",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "pco_robust",
+      "seed": 13,
+      "status": "planned"
+    },
+    {
+      "run_id": "ffc3bb7b3ee3",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "pco_robust",
+      "seed": 29,
+      "status": "planned"
+    },
+    {
+      "run_id": "1e156225e860",
+      "backbone": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "method": "pco_robust",
+      "seed": 47,
+      "status": "planned"
+    }
+  ]
+}

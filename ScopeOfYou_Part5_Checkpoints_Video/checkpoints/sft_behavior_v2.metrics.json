@@ -1,0 +1,8 @@
+{
+  "backend": "torch_behavior_adapter",
+  "train_examples": 4000,
+  "validation_examples": 500,
+  "best_val_mse": 0.00011321170313749462,
+  "epochs": 24,
+  "checkpoint": "/mnt/data/bounded-self/checkpoints/sft_behavior_v2.pt"
+}

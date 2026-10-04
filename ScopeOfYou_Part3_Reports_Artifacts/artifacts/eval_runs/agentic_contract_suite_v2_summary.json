@@ -1,0 +1,132 @@
+{
+  "benchmark": "Agentic Personalization Contract Suite v2",
+  "status": "evaluator stress-test only; not an LLM capability result",
+  "n_scenarios": 288,
+  "trials_per_scenario": 5,
+  "policies": {
+    "naive_personalize": {
+      "n_trials": 1440,
+      "action_contract": 0.2708333333333333,
+      "end_state_success": 0.2708333333333333,
+      "protected_boundary": 0.4166666666666667,
+      "permission_boundary": 0.4166666666666667,
+      "injection_resistance": 0.6875,
+      "stale_memory_resistance": 0.7708333333333334,
+      "recovery_success": 0.0,
+      "hard_safe": 0.4166666666666667,
+      "trial_success": 0.2708333333333333,
+      "by_variant": {
+        "clean": {
+          "n": 480,
+          "trial_success": 0.4375,
+          "hard_safe": 0.5625
+        },
+        "stale_memory": {
+          "n": 480,
+          "trial_success": 0.3125,
+          "hard_safe": 0.5625
+        },
+        "tool_injection": {
+          "n": 480,
+          "trial_success": 0.0625,
+          "hard_safe": 0.125
+        }
+      },
+      "all_success@5": 0.2708333333333333,
+      "pass@5": 0.2708333333333333
+    },
+    "risk_aware": {
+      "n_trials": 1440,
+      "action_contract": 0.8125,
+      "end_state_success": 0.8125,
+      "protected_boundary": 1.0,
+      "permission_boundary": 1.0,
+      "injection_resistance": 1.0,
+      "stale_memory_resistance": 0.9375,
+      "recovery_success": 0.375,
+      "hard_safe": 1.0,
+      "trial_success": 0.8125,
+      "by_variant": {
+        "clean": {
+          "n": 480,
+          "trial_success": 0.8125,
+          "hard_safe": 1.0
+        },
+        "stale_memory": {
+          "n": 480,
+          "trial_success": 0.8125,
+          "hard_safe": 1.0
+        },
+        "tool_injection": {
+          "n": 480,
+          "trial_success": 0.8125,
+          "hard_safe": 1.0
+        }
+      },
+      "all_success@5": 0.8125,
+      "pass@5": 0.8125
+    },
+    "noisy_risk_aware": {
+      "n_trials": 1440,
+      "action_contract": 0.7652777777777777,
+      "end_state_success": 0.7666666666666667,
+      "protected_boundary": 0.9826388888888888,
+      "permission_boundary": 0.9826388888888888,
+      "injection_resistance": 0.9916666666666667,
+      "stale_memory_resistance": 0.9208333333333333,
+      "recovery_success": 0.32430555555555557,
+      "hard_safe": 0.9826388888888888,
+      "trial_success": 0.7652777777777777,
+      "by_variant": {
+        "clean": {
+          "n": 480,
+          "trial_success": 0.775,
+          "hard_safe": 0.9916666666666667
+        },
+        "stale_memory": {
+          "n": 480,
+          "trial_success": 0.7625,
+          "hard_safe": 0.98125
+        },
+        "tool_injection": {
+          "n": 480,
+          "trial_success": 0.7583333333333333,
+          "hard_safe": 0.975
+        }
+      },
+      "all_success@5": 0.5659722222222222,
+      "pass@5": 0.8402777777777778
+    },
+    "contract_oracle": {
+      "n_trials": 1440,
+      "action_contract": 1.0,
+      "end_state_success": 1.0,
+      "protected_boundary": 1.0,
+      "permission_boundary": 1.0,
+      "injection_resistance": 1.0,
+      "stale_memory_resistance": 1.0,
+      "recovery_success": 0.1875,
+      "hard_safe": 1.0,
+      "trial_success": 1.0,
+      "by_variant": {
+        "clean": {
+          "n": 480,
+          "trial_success": 1.0,
+          "hard_safe": 1.0
+        },
+        "stale_memory": {
+          "n": 480,
+          "trial_success": 1.0,
+          "hard_safe": 1.0
+        },
+        "tool_injection": {
+          "n": 480,
+          "trial_success": 1.0,
+          "hard_safe": 1.0
+        }
+      },
+      "all_success@5": 1.0,
+      "pass@5": 1.0
+    }
+  }
+}

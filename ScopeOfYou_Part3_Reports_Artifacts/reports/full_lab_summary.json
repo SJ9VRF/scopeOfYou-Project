@@ -1,0 +1,68 @@
+{
+  "status": "complete",
+  "dataset_examples": 5000,
+  "profiles": 100,
+  "preference_pairs": 10000,
+  "sft": {
+    "backend": "torch_behavior_adapter",
+    "train_examples": 4800,
+    "validation_examples": 200,
+    "best_val_mse": 8.154391980497167e-05,
+    "epochs": 24,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/sft_behavior.pt"
+  },
+  "reward_model": {
+    "pairs": 10000,
+    "final_pair_accuracy": 1.0,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/reward_model.pt"
+  },
+  "preference_optimization": {
+    "steps": 50,
+    "final_reward": 12.868988037109375,
+    "drift_penalty": 0.2472735196352005,
+    "checkpoint": "/mnt/data/bounded-self/checkpoints/post_trained_behavior.pt"
+  },
+  "comparison": {
+    "bootstrap": {
+      "personalization": 0.83,
+      "factuality": 1.0,
+      "sycophancy": 1.0,
+      "proactivity": 1.0,
+      "personalbench_mean": 0.9575
+    },
+    "sft": {
+      "personalization": 0.9978758007287979,
+      "factuality": 0.9980661845207215,
+      "sycophancy": 0.9981701013445854,
+      "proactivity": 0.9843300415620208,
+      "personalbench_mean": 0.9946105320390314
+    },
+    "post_trained": {
+      "personalization": 0.9976895278692246,
+      "factuality": 0.05085662737488747,
+      "sycophancy": 0.9959329730272293,
+      "proactivity": 0.4827721338159288,
+      "personalbench_mean": 0.6318128155218176
+    }
+  },
+  "deltas_post_vs_sft": {
+    "personalization": -0.00018627285957328876,
+    "factuality": -0.947209557145834,
+    "sycophancy": -0.0022371283173561185,
+    "proactivity": -0.5015579077460919,
+    "personalbench_mean": -0.3627977165172138
+  },
+  "failure_mining": {
+    "failures": 352,
+    "counts": {
+      "FACT-01": 200,
+      "PRO-01": 152
+    },
+    "validation_examples": 200
+  },
+  "hard_cases": {
+    "generated": 1056,
+    "source_failures": 352
+  },
+  "wall_seconds": 8.807642740000006
+}

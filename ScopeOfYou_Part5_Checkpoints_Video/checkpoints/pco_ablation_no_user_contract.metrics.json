@@ -1,0 +1,14 @@
+{
+  "steps": 20,
+  "checkpoint": "/mnt/data/bounded-self-paper-upgrade/bounded-self/checkpoints/pco_ablation_no_user_contract.pt",
+  "step": 20,
+  "loss": -25.48334312438965,
+  "reward": 31.496841430664062,
+  "trust": 0.24281863868236542,
+  "base_anchor": 0.0030598558951169252,
+  "user_mut": 0.0003794027434196323,
+  "user_inv": 1.8769068788060395e-07,
+  "context": 0.1728900969028473,
+  "attack": 2.1980835299473256e-05,
+  "invariants": 3.317433765914757e-06
+}

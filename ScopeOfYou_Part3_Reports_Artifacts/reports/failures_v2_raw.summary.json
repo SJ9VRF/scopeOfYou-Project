@@ -1,0 +1,8 @@
+{
+  "failures": 850,
+  "counts": {
+    "FACT-01": 500,
+    "PRO-01": 350
+  },
+  "validation_examples": 500
+}

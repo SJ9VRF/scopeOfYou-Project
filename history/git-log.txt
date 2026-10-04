@@ -1,0 +1,17 @@
+6a6f2ae Import audited Scope of You baseline
+61a24f9 Add evidence journal, failures, decisions, and raw artifacts
+4b5f2ef Surface the research process on the project page
+a546085 Trace the benchmark failure through redesign and trade-off
+81f1052 Document the real git-history boundary
+dec3ef3 Make the evidence layer reproducible and discoverable
+a766d24 Keep reviewer evidence and test counts self-consistent
+e2e96bf Raise frontier verification floor for Evidence Layer tests
+d789e2f Treat Git bundle as binary during release text audits
+df6e6f2 Package real Git history without text-scanning binaries
+6770e5d Verify reviewer Git bundles as binary artifacts
+130bd2e Make the Evidence Layer part of project-page compliance
+7b3536a Add failure taxonomy threat model and red-team coverage
+44c6564 Surface research ownership and enforce it in release verification
+27118c2 Include raw failure evidence in reviewer verification
+5efabfe Make the evidence-rich project page reproducibly standalone
+d2a07f9 (HEAD -> master) Fix standalone page root and include portfolio links

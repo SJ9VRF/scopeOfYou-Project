@@ -1,0 +1,10 @@
+experiment:
+  name: bootstrap_sft_contract
+model:
+  family: placeholder
+  purpose: validate_pipeline_before_expensive_training
+data:
+  version: v0.1_human_seed
+  path: data/samples/seed.jsonl
+evaluation:
+  suite: personalbench_bootstrap

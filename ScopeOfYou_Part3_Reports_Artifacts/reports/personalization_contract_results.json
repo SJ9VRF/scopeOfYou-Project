@@ -1,0 +1,87 @@
+{
+  "SFT": {
+    "personalbench": {
+      "personalization": 0.993725227650255,
+      "factuality": 0.997713380108277,
+      "sycophancy": 0.9978119839727878,
+      "proactivity": 0.9726402563715975,
+      "personalbench_mean": 0.9904727120257293
+    },
+    "contract": {
+      "user_state_responsiveness": 0.9906053308695555,
+      "invariant_stability": 0.9995563144981862,
+      "context_suppression": 0.6024675120574733,
+      "context_application": 0.9072892691416045,
+      "invariant_attack_resistance": 0.9956508610149225,
+      "contract_score": 0.8991138575163484
+    }
+  },
+  "Raw": {
+    "personalbench": {
+      "personalization": 0.8396424254198598,
+      "factuality": 0.9997319564223289,
+      "sycophancy": 0.9998095747828484,
+      "proactivity": 0.5204086200555166,
+      "personalbench_mean": 0.8398981441701384
+    },
+    "contract": {
+      "user_state_responsiveness": 0.7466102012168073,
+      "invariant_stability": 0.9998539577672879,
+      "context_suppression": 0.10295397718747455,
+      "context_application": 0.5519201584060986,
+      "invariant_attack_resistance": 0.9995779663821062,
+      "contract_score": 0.680183252191955
+    }
+  },
+  "Constrained": {
+    "personalbench": {
+      "personalization": 0.9202157858864715,
+      "factuality": 0.9991843254864216,
+      "sycophancy": 0.9992266347507636,
+      "proactivity": 0.8737340443906685,
+      "personalbench_mean": 0.9480901976285813
+    },
+    "contract": {
+      "user_state_responsiveness": 0.8577608843228469,
+      "invariant_stability": 0.999630658129851,
+      "context_suppression": 0.46594784489522373,
+      "context_application": 0.8413907476256292,
+      "invariant_attack_resistance": 0.9984461712837219,
+      "contract_score": 0.8326352612514545
+    }
+  },
+  "BATPO": {
+    "personalbench": {
+      "personalization": 0.943306019484376,
+      "factuality": 0.9995224089423815,
+      "sycophancy": 0.9995093216001988,
+      "proactivity": 0.9033845591103037,
+      "personalbench_mean": 0.961430577284315
+    },
+    "contract": {
+      "user_state_responsiveness": 0.88102174716567,
+      "invariant_stability": 0.9998045391589403,
+      "context_suppression": 0.49830836163212855,
+      "context_application": 0.8634448171536128,
+      "invariant_attack_resistance": 0.9990444454799096,
+      "contract_score": 0.8483247821180523
+    }
+  },
+  "PCO": {
+    "personalbench": {
+      "personalization": 0.9289823268568144,
+      "factuality": 0.9986996336778005,
+      "sycophancy": 0.9985605915884177,
+      "proactivity": 0.8916290396903952,
+      "personalbench_mean": 0.954467897953357
+    },
+    "contract": {
+      "user_state_responsiveness": 0.8649231928160104,
+      "invariant_stability": 0.9993745516240596,
+      "context_suppression": 0.8633654869655147,
+      "context_application": 0.8954557146382829,
+      "invariant_attack_resistance": 0.9965792949746053,
+      "contract_score": 0.9239396482036946
+    }
+  }
+}

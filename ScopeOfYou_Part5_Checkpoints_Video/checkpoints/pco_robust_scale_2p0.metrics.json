@@ -1,0 +1,14 @@
+{
+  "steps": 20,
+  "checkpoint": "/mnt/data/bounded-self-paper-upgrade/bounded-self/checkpoints/pco_robust_scale_2p0.pt",
+  "step": 20,
+  "loss": -9.509064674377441,
+  "reward": 30.42649269104004,
+  "trust": 0.8201515078544617,
+  "base_anchor": 0.00934373028576374,
+  "user_mut": 0.1364712417125702,
+  "user_inv": 1.421688011760125e-07,
+  "context": 0.18870216608047485,
+  "attack": 2.4445125745842233e-05,
+  "invariants": 3.641334387793904e-06
+}

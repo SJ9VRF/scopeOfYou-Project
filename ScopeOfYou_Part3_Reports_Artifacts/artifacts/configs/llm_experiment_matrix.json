@@ -1,0 +1,34 @@
+{
+  "status": "pre-registered external execution matrix; no outcomes are included",
+  "backbones": [
+    {"id": "Qwen/Qwen3-8B", "family": "qwen"},
+    {"id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "family": "llama"}
+  ],
+  "methods": [
+    "base_instruct",
+    "sft_personalization",
+    "profile_conditioning",
+    "personalized_dpo",
+    "external_personalized_alignment_baseline",
+    "pco_robust"
+  ],
+  "seeds": [13, 29, 47],
+  "required_benchmarks": [
+    "contractbench_implicit",
+    "benchpres",
+    "personalized_rewardbench",
+    "dynamic_personalization",
+    "overpersonalization_stress"
+  ],
+  "required_metrics": [
+    "apply_accuracy",
+    "suppress_accuracy",
+    "protected_invariant_rate",
+    "general_utility",
+    "worst_contract",
+    "ood_contract",
+    "human_context_appropriateness"
+  ],
+  "utility_noninferiority_margin": 0.02,
+  "selection_rule": "all hyperparameter selection on validation only; test set opened once after method freeze"
+}

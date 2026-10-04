@@ -1,0 +1,10 @@
+services:
+  behavioral-api:
+    build: .
+    ports:
+      - "8765:8765"
+    command: personal-agi-serve --checkpoint checkpoints/sft_behavior_v31.pt --host 0.0.0.0 --port 8765
+  doctor:
+    build: .
+    profiles: ["tools"]
+    command: personal-agi-pt doctor

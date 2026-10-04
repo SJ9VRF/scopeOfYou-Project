@@ -1,0 +1,4 @@
+status: reference_design
+method: contextual_bandit
+action_space: [answer_concise, answer_detailed, correct_fact, ask, suggest, wait]
+reward: personalized_multi_objective

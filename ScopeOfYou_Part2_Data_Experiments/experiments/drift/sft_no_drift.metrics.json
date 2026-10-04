@@ -1,0 +1,8 @@
+{
+  "backend": "torch_behavior_adapter",
+  "train_examples": 3900,
+  "validation_examples": 900,
+  "best_val_mse": 0.000574330915696919,
+  "epochs": 12,
+  "checkpoint": "/mnt/data/workflag6/bounded-self/experiments/drift/sft_no_drift.pt"
+}

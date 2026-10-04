@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Scope of You: Learning Where Personalization Is Allowed to Matter"
+message: "If you use this research artifact, please cite this repository release."
+type: software
+authors:
+  - family-names: Yavary
+    given-names: Aura
+version: 1.1.0
+abstract: "Scope of You studies where a known user-preference effect is allowed to matter: when personalization should apply, when context should suppress it, and which protected behaviors it must not change."

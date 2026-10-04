@@ -1,0 +1,37 @@
+{
+  "SFT": {
+    "protected_leakage_mean": 0.0004436860978603363,
+    "factuality_leakage": 0.0003551219900449117,
+    "non_sycophancy_leakage": 0.0005322502056757609,
+    "personalization_response_magnitude": 0.641572246439755,
+    "n": 1200
+  },
+  "Raw": {
+    "protected_leakage_mean": 0.00014604248106479646,
+    "factuality_leakage": 0.00015946149826049806,
+    "non_sycophancy_leakage": 0.00013262346386909484,
+    "personalization_response_magnitude": 0.8953897986568335,
+    "n": 1200
+  },
+  "Constrained": {
+    "protected_leakage_mean": 0.0003693421185016632,
+    "factuality_leakage": 0.00035183613499005636,
+    "non_sycophancy_leakage": 0.0003868481020132701,
+    "personalization_response_magnitude": 0.7840739590434047,
+    "n": 1200
+  },
+  "BATPO": {
+    "protected_leakage_mean": 0.00019546113908290862,
+    "factuality_leakage": 0.00019351760546366373,
+    "non_sycophancy_leakage": 0.0001974046727021535,
+    "personalization_response_magnitude": 0.7609712641018753,
+    "n": 1200
+  },
+  "PCO-Robust": {
+    "protected_leakage_mean": 0.0009271138906478881,
+    "factuality_leakage": 0.0009477009375890096,
+    "non_sycophancy_leakage": 0.0009065268437067667,
+    "personalization_response_magnitude": 0.7774394324961273,
+    "n": 1200
+  }
+}

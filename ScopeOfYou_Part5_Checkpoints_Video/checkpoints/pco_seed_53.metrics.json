@@ -1,0 +1,14 @@
+{
+  "steps": 180,
+  "checkpoint": "/mnt/data/bounded-self-paper-upgrade/bounded-self/checkpoints/pco_seed_53.pt",
+  "step": 180,
+  "loss": -35.062103271484375,
+  "reward": 36.72276306152344,
+  "trust": 1.3174467086791992,
+  "base_anchor": 0.013365967199206352,
+  "user_mut": 0.005030654836446047,
+  "user_inv": 5.960773705737665e-07,
+  "context": 0.024430178105831146,
+  "attack": 2.9826012905687094e-05,
+  "invariants": 3.266310841354425e-06
+}

@@ -1,0 +1,19 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -e . pytest torch --extra-index-url https://download.pytorch.org/whl/cpu
+      - run: pytest -q
+      - run: python -m personal_agi_pt.cli doctor
+      - run: PYTHONPATH=src python scripts/service_smoke.py
+      - run: PYTHONPATH=src python -m personal_agi_pt.benchmark_runner --checkpoint checkpoints/sft_behavior_v31.pt --split test --output /tmp/bench.json
+      - run: PYTHONPATH=src python -m personal_agi_pt.release_audit --root . --output /tmp/release_audit.json
+      - run: python -m personal_agi_pt.cli export-sft --source data/samples/lab_v1.jsonl --output /tmp/sft.jsonl

@@ -1,0 +1,4 @@
+objective: pairwise_bradley_terry
+dimensions: [personalization, factuality, non_sycophancy, proactivity, helpfulness]
+epochs: 16
+learning_rate: 0.003

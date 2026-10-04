@@ -1,0 +1,9 @@
+{
+  "query": "I have a deadline tomorrow. Keep the answer concise and tell me the most useful next action.",
+  "user_state": {
+    "verbosity": "concise",
+    "proactivity": "high",
+    "technical_depth": "medium",
+    "confirmation_preference": "ask_before_irreversible"
+  }
+}

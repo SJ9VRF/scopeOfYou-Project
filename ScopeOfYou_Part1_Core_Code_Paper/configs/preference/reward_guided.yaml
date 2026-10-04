@@ -1,0 +1,4 @@
+method: differentiable_reward_guided_behavior_optimization
+steps: 50
+beta_reference_drift: 0.15
+learning_rate: 0.0008

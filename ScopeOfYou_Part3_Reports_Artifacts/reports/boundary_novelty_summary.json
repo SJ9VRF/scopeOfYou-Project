@@ -1,0 +1,147 @@
+{
+  "release": "0.7.0",
+  "method": "Boundary-Aware Temporal Personalized Optimization (BATPO)",
+  "regular_test": {
+    "sft": {
+      "personalization": 0.993725227650255,
+      "factuality": 0.997713380108277,
+      "sycophancy": 0.9978119839727878,
+      "proactivity": 0.9726402563715975,
+      "personalbench_mean": 0.9904727120257293
+    },
+    "raw": {
+      "personalization": 0.8396424254198598,
+      "factuality": 0.9997319564223289,
+      "sycophancy": 0.9998095747828484,
+      "proactivity": 0.5204086200555166,
+      "personalbench_mean": 0.8398981441701384
+    },
+    "constrained": {
+      "personalization": 0.9202157858864715,
+      "factuality": 0.9991843254864216,
+      "sycophancy": 0.9992266347507636,
+      "proactivity": 0.8737340443906685,
+      "personalbench_mean": 0.9480901976285813
+    },
+    "boundary": {
+      "personalization": 0.943306019484376,
+      "factuality": 0.9995224089423815,
+      "sycophancy": 0.9995093216001988,
+      "proactivity": 0.9033845591103037,
+      "personalbench_mean": 0.961430577284315
+    }
+  },
+  "counterfactual_test": {
+    "sft": {
+      "counterfactual_responsiveness": 0.9906053308695555,
+      "invariant_stability": 0.9995563144981862,
+      "direction_accuracy": 1.0,
+      "boundary_score": 0.9967205484559138
+    },
+    "raw": {
+      "counterfactual_responsiveness": 0.7466102012168073,
+      "invariant_stability": 0.9998539577672879,
+      "direction_accuracy": 1.0,
+      "uncertainty_budget_score": 0.2519444801568096,
+      "boundary_score": 0.7496021597852263
+    },
+    "constrained": {
+      "counterfactual_responsiveness": 0.8577608843228469,
+      "invariant_stability": 0.999630658129851,
+      "direction_accuracy": 1.0,
+      "uncertainty_budget_score": 0.9376803083605201,
+      "boundary_score": 0.9487679627033045
+    },
+    "boundary": {
+      "counterfactual_responsiveness": 0.88102174716567,
+      "invariant_stability": 0.9998045391589403,
+      "direction_accuracy": 1.0,
+      "uncertainty_budget_score": 0.9942826159660092,
+      "boundary_score": 0.9687772255726549
+    }
+  },
+  "bootstrap": {
+    "boundary_vs_raw": {
+      "users": 20,
+      "bootstrap_draws": 2000,
+      "metrics": {
+        "personalization": {
+          "delta": 0.10366359406451618,
+          "ci95": [
+            0.08954436302005586,
+            0.11814082271686252
+          ]
+        },
+        "factuality": {
+          "delta": -0.00020954747994739731,
+          "ci95": [
+            -0.00025321468710899354,
+            -0.0001698781549930528
+          ]
+        },
+        "sycophancy": {
+          "delta": -0.0003002531826495847,
+          "ci95": [
+            -0.00035128697752948577,
+            -0.00025256762901941233
+          ]
+        },
+        "proactivity": {
+          "delta": 0.38297593905478716,
+          "ci95": [
+            0.2964644741684198,
+            0.47008683154185615
+          ]
+        },
+        "personalbench_mean": {
+          "delta": 0.12153243311417658,
+          "ci95": [
+            0.09864289173428553,
+            0.14540141143196766
+          ]
+        }
+      }
+    },
+    "boundary_vs_constrained": {
+      "users": 20,
+      "bootstrap_draws": 2000,
+      "metrics": {
+        "personalization": {
+          "delta": 0.023090233597904453,
+          "ci95": [
+            0.016379197530138008,
+            0.030353716589355227
+          ]
+        },
+        "factuality": {
+          "delta": 0.0003380834559599588,
+          "ci95": [
+            0.0002912171681722309,
+            0.0003963237504164274
+          ]
+        },
+        "sycophancy": {
+          "delta": 0.00028268684943518754,
+          "ci95": [
+            0.0002431043485800699,
+            0.00032369181513786647
+          ]
+        },
+        "proactivity": {
+          "delta": 0.029650514719635264,
+          "ci95": [
+            0.02331674703980487,
+            0.036176629437009514
+          ]
+        },
+        "personalbench_mean": {
+          "delta": 0.013340379655733708,
+          "ci95": [
+            0.01084695998149302,
+            0.015879192898748458
+          ]
+        }
+      }
+    }
+  }
+}

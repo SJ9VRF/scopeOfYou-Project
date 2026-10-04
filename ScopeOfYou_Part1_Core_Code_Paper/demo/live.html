@@ -1,0 +1,11 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scope of You — Live Demo</title>
+<style>body{font:16px system-ui;max-width:900px;margin:40px auto;padding:0 20px;background:#0d0f12;color:#f4f4f4} textarea,input,select{width:100%;box-sizing:border-box;margin:6px 0 14px;padding:10px;background:#171a1f;color:#fff;border:1px solid #333;border-radius:8px}button{padding:10px 16px;border:0;border-radius:8px;font-weight:700}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:#15181d;padding:18px;border-radius:12px;margin-top:18px}pre{white-space:pre-wrap;overflow-wrap:anywhere}@media(max-width:700px){.grid{grid-template-columns:1fr}}</style></head>
+<body><h1>Live behavioral checkpoint</h1><p>This page talks to the local dependency-light service. Start it with <code>bounded-self-serve</code>.</p>
+<div class="grid"><div><label>API URL</label><input id="api" value="http://127.0.0.1:8765"><label>Verbosity</label><select id="verbosity"><option>concise</option><option selected>balanced</option><option>detailed</option></select></div><div><label>Proactivity (0–1)</label><input id="pro" type="number" min="0" max="1" step="0.1" value="0.5"><label>Technical depth</label><select id="depth"><option>basic</option><option>intermediate</option><option selected>advanced</option></select></div></div>
+<label>Query</label><textarea id="query" rows="5">What is the capital of Germany?</textarea><button onclick="run()">Run checkpoint</button>
+<div class="card"><h3>Result</h3><pre id="out">Not run yet.</pre></div>
+<script>
+async function run(){const out=document.getElementById('out');out.textContent='Running…';const body={user_id:'browser-demo',user_state:{verbosity:verbosity.value,directness:'high',technical_depth:depth.value,confirmation_policy:'irreversible_only',correction_tolerance:'direct',proactivity:Number(pro.value)},current_query:query.value};try{const r=await fetch(api.value+'/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});out.textContent=JSON.stringify(await r.json(),null,2)}catch(e){out.textContent='Could not reach local service: '+e}}
+</script></body></html>

@@ -1,0 +1,1 @@
+{"id":"prb1","question":"Recommend a weekend activity","profile":[{"id":"p1","category":"travel","text":"I prefer quiet museums"}],"rubric_aspects":[{"aspect":"quiet","evidence":"profile","reason":"preference"}],"narrative":"User prefers quiet activities","category":"travel","chosen":"Visit a small museum.","rejected":"Go to a loud nightclub."}

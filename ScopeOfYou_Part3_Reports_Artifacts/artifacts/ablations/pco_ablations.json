@@ -1,0 +1,26 @@
+{
+  "full": {
+    "personalbench_mean": 0.9523193538188934,
+    "contract_score": 0.7353871682512841
+  },
+  "no_user_contract": {
+    "personalbench_mean": 0.9627537280321121,
+    "contract_score": 0.7328827495648437
+  },
+  "no_context_contract": {
+    "personalbench_mean": 0.9435140043497086,
+    "contract_score": 0.6402574919217253
+  },
+  "no_invariant_preservation": {
+    "personalbench_mean": 0.9523123204708099,
+    "contract_score": 0.7353860888662812
+  },
+  "no_attack_training": {
+    "personalbench_mean": 0.9523118138313293,
+    "contract_score": 0.7353816210490792
+  },
+  "no_trust_region": {
+    "personalbench_mean": 0.9469425231218338,
+    "contract_score": 0.735178522198984
+  }
+}
